@@ -1,4 +1,4 @@
-package java;
+package roman;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -12,7 +12,6 @@ public class RomanNumeralTests {
     @Test
     void OneIsI (){
         RomanNumeral romanNumeral = new RomanNumeral();
-        g.romanNumeral = 1;
-        assertEquals(g.romanNumeral, "I");
+        assertEquals(romanNumeral.convert(1), "I");
     }
 }
