@@ -9,4 +9,10 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 public class RomanNumeralTests {
 
+    @Test
+    void OneIsI (){
+        RomanNumeral romanNumeral = new RomanNumeral();
+        g.romanNumeral = 1;
+        assertEquals(g.romanNumeral, "I");
+    }
 }
