@@ -15,18 +15,22 @@ public class RomanNumeral {
 
         if (input == 9){
             message += "IX";
+            input -= 9;
         }
-        else if (input == 5){
+        
+        if (input >= 5 && input < 9){
             message += "V";
+            input -= 5;
         }
-        else if (input == 4){
+
+        if (input == 4){
             message += "IV";
+            input -= 4;
         }
-        else{
-            for (int i = 0; i < input; i++){
-                message += "I";
-            }
-        }     
+
+        for (int i = 0; i < input; i++){
+            message += "I";
+        }  
 
         return message;
 
