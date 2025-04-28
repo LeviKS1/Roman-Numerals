@@ -1,4 +1,4 @@
-package roman;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -24,12 +24,18 @@ public class RomanNumeralTests {
     @Test
     void FourIsIV(){
         RomanNumeral romanNumeral = new RomanNumeral();
-        assertEquals(romanNumeral.convert(4), "IV");
+        assertEquals(romanNumeral.convert(4),"IV");
     }
 
     @Test
     void NineIsIX(){
         RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals(romanNumeral.convert(9), "IX");
+    }
+
+    @Test
+    void TenIsX(){
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertEquals(romanNumeral.convert(10), "X");
     }
 }
