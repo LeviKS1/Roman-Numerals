@@ -20,4 +20,10 @@ public class RomanNumeralTests {
         RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals(romanNumeral.convert(5), "V");
     }
+
+    @Test
+    void FourIsIV(){
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertEquals(romanNumeral.convert(4), "IV");
+    }
 }
