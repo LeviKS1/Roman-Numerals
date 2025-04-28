@@ -14,4 +14,10 @@ public class RomanNumeralTests {
         RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals(romanNumeral.convert(1), "I");
     }
+
+    @Test
+    void FiveIsV(){
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertEquals(romanNumeral.convert(5), "V");
+    }
 }
