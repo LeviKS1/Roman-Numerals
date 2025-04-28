@@ -1,4 +1,4 @@
-package roman;
+
 
 public class RomanNumeral {
 
@@ -9,10 +9,17 @@ public class RomanNumeral {
         int five = input % 5;
         int four = input % 4;
 
+
+        if (input == 10){
+            int q = (int) Math.floorDiv(input, 10);
+            for (int i = 0; i < q; i++){
+                message += "X";
+            }
+        }
         if (nine == 0){
             message += "IX";
         }
-        else if (five == 0){
+        else if (input == 5){
             message += "V";
         }
         else if (four == 0){
