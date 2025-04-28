@@ -5,10 +5,14 @@ public class RomanNumeral {
     String convert (int input){
         String message = "";
         int ones = input % 10;
+        int nine = input % 9;
         int five = input % 5;
         int four = input % 4;
 
-        if (five == 0){
+        if (nine == 0){
+            message += "IX";
+        }
+        else if (five == 0){
             message += "V";
         }
         else if (four == 0){
