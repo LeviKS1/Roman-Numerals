@@ -2,10 +2,7 @@
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 
 public class RomanNumeralTests {
 
@@ -37,5 +34,11 @@ public class RomanNumeralTests {
     void TenIsX(){
         RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals(romanNumeral.convert(10), "X");
+    }
+
+    @Test
+    void LessThanTen(){
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertEquals(romanNumeral.convert(8), "VIII");
     }
 }
