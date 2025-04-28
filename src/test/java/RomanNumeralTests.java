@@ -26,4 +26,10 @@ public class RomanNumeralTests {
         RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals(romanNumeral.convert(4), "IV");
     }
+
+    @Test
+    void NineIsIX(){
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertEquals(romanNumeral.convert(9), "IX");
+    }
 }
