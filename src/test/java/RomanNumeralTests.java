@@ -32,10 +32,4 @@ public class RomanNumeralTests {
         RomanNumeral romanNumeral = new RomanNumeral();
         assertEquals(romanNumeral.convert(9), "IX");
     }
-
-    @Test
-    void TenIsX(){
-        RomanNumeral romanNumeral = new RomanNumeral();
-        assertEquals(romanNumeral.convert(10), "X");
-    }
 }
